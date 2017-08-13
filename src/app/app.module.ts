@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { HttpModule, JsonpModule } from '@angular/http';
+
+import { EuroJackpotComponent } from './eurojackpot.component';
+import { EuroJackpotService } from './services/eurojackpot.service';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    EuroJackpotComponent
+  ],
+  providers: [
+    EuroJackpotService
+  ],
+  bootstrap: [EuroJackpotComponent]
 })
 export class AppModule { }
