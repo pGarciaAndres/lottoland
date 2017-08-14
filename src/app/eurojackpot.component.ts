@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 // Import Eurojackpot Service.
 import { EuroJackpotService } from './services/eurojackpot.service';
@@ -8,15 +8,16 @@ import { EuroJackpotService } from './services/eurojackpot.service';
   templateUrl: './eurojackpot.component.html',
   styleUrls: ['./eurojackpot.component.css']
 })
-export class EuroJackpotComponent {
+export class EuroJackpotComponent implements OnInit {
   title = 'EuroJackpot';
 
   public posts;
   public errorMessage;
 
-  // Load service.
-  constructor(private _eurojackpotService: EuroJackpotService) {
+  // Constructor.
+  constructor(private _eurojackpotService: EuroJackpotService) { };
 
+  ngOnInit() {
     // Calling to service mehotd.
     this._eurojackpotService.getPosts()
       .subscribe(
@@ -29,9 +30,9 @@ export class EuroJackpotComponent {
 
               if(this.errorMessage !== null){
                 console.log(this.errorMessage);
-                alert("Error loading EuroJackpot Data");
               }
           }
-      );
-  }
+      ); 
+  };
+
 }

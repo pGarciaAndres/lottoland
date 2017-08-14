@@ -13,6 +13,15 @@ export class EuroJackpotService {
 
     getPosts() {
         // Get method to load EuroJackpot data.
-        return this._http.get("https://www.lottoland.com/api/drawings/euroJackpot").map(res => res.json());
+        return this._http.get("https://www.lottoland.com/api/drawings/euroJackpot", {headers: this.getHeaders()}).map(res => res.json());
     }
+
+    private getHeaders(){
+    // I included these headers because otherwise FireFox
+    // will request text/html instead of application/json
+    let headers = new Headers();
+    headers.append('Accept', 'application/json');
+    headers.append('Access-Control-Allow-Origin', '*');
+    return headers;
+  }
 }
