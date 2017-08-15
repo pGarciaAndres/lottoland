@@ -3,14 +3,14 @@ export interface IResultTable {
     tier: string;
     match: string;
     winners: string;
-    amount: string;
+    amount: number;
 }
 
 export class ResultTable implements IResultTable {
     public tier: string;
     public match: string;
     public winners: string;
-    public amount: string;
+    public amount: number;
 
     // Constructor.
     constructor() {

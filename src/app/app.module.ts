@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { EuroJackpotComponent } from './components/eurojackpot.component';
@@ -19,7 +19,9 @@ import { DataTableModule, SharedModule } from 'primeng/primeng';
     EuroJackpotComponent
   ],
   providers: [
-    EuroJackpotService
+    EuroJackpotService,
+    {provide: LOCALE_ID,
+    useValue: 'es-ES'}
   ],
   bootstrap: [EuroJackpotComponent]
 })

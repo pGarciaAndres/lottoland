@@ -92,7 +92,7 @@ export class EuroJackpotComponent implements OnInit {
       resultTable.tier = this.tiers[i];
       resultTable.match = this.matches[i];
       resultTable.winners = odds[this.ranks[i]].winners + "x";
-      resultTable.amount = "€" + odds[this.ranks[i]].prize;
+      resultTable.amount = odds[this.ranks[i]].prize;
       this.resultsTable.push(resultTable);
     }
   }
