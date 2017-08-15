@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<article id="drawingResults" class="container">
+
+    <h3 class="bolder">EuroJackpot Results & Winning Numbers</h3>
+    <hr class="hr">
+    <h4>EuroJackpot Results for Friday 11 Aug 2017</h4>
+
+    <div class="lottery-number-container">
+      <ul class="lottery-number-ul">
+        <li class="lottery-number-li" *ngFor="let number of numbers">
+          {{ number }}
+        </li>
+        <li class="lottery-number-li extra" *ngFor="let euro of euroNumbers">
+          {{ euro }}
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="table" >
+      <p-dataTable [value]="resultsTable">
+          <p-column field="tier" header="Tier" [style]="{'width':'100px'}"></p-column>
+          <p-column field="match" header="Match"></p-column>
+          <p-column field="winners" header="Winners"></p-column>
+          <p-column field="amount" header="Amount"></p-column>
+      </p-dataTable>
+    </div>
+    <div class="pods">
+      <section class="pod">
+          <p class="podHeader">The EuroJackpot numbers for 11.08.2017</p>
+          <p><span class="podBold">The 282th draw for the EuroJackpot was held on 11.08.2017</span>, as usual at 9pm in Helsinki.</p>
+      </section>
+      <section class="pod">
+          <p class="podHeader">EuroJackpot numbers for 11.08.2017</p>
+          <p>The balls used for the draw are made of a synthetic polymer, softer than ping-pong balls. The results are broadcast after the draw, with the draw-machines independently checked by the VTT Technical Research Center of Finland.</p>
+          <p>Lottoland published the draw results immediately after the draw on 11.08.2017. You can easily check your tickets here at Lottoland, or purchase your ticket for the next draw.</p>
+      </section>
+      <section class="pod">
+          <p class="podHeader">The EuroJackpot was not won</p>
+          <p>After another snag-free draw of the EuroJackpot on 11.08.2017, the results were posted. Unfortunately, there were no jackpot winners in any of the countries participating in the lottery. However all is not lost: the jackpot rolls over to the next draw, growing to a chunky 46 million Euros!</p>
+      </section>
+
+    </div>
+
+</article>
+

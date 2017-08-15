@@ -1,0 +1,76 @@
+.container {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+.hr {
+    border-top: 1px solid #c7c7c7;
+    margin-bottom: 30px;
+}
+
+.lottery-number-container {
+    margin-bottom: 28px;
+}
+
+.lottery-number-ul {
+    display: inline-block;
+    font-size: 14px;
+    color: #012406;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.lottery-number-li {
+    display: inline-block;
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #d9deda;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.extra {
+    border: 1px solid #ca7f26 !important;
+}
+
+.table {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+}
+
+.ui-datatable-even {
+    background-color: #FFFFFF !important;
+}
+
+.pods {
+    width: 25%;
+    float: right;
+}
+
+.pod {
+    border: 1px solid #c7c7c7;
+    border-left: none;
+    box-shadow: -7px 0 0 0 #69a507;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.podHeader {
+    font-size: 17px;
+    line-height: 26px;
+    color: #012406;
+}
+
+.podBold {
+    font-weight: bold;
+}

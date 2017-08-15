@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { EuroJackpotComponent } from './eurojackpot.component';
+import { EuroJackpotComponent } from '../eurojackpot.component';
 
 describe('EuroJackpotComponent', () => {
   beforeEach(async(() => {
