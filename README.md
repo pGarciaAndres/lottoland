@@ -1,3 +1,7 @@
+## Authors
+
+* **Pablo García Andrés** - *Initial work* - [pGarciaAndres](https://github.com/pGarciaAndres)
+
 # Lottoland
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
