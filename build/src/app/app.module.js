@@ -29,7 +29,9 @@ var AppModule = (function () {
                 eurojackpot_component_1.EuroJackpotComponent
             ],
             providers: [
-                eurojackpot_service_1.EuroJackpotService
+                eurojackpot_service_1.EuroJackpotService,
+                { provide: core_1.LOCALE_ID,
+                    useValue: 'es-ES' }
             ],
             bootstrap: [eurojackpot_component_1.EuroJackpotComponent]
         })
@@ -37,4 +39,3 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map

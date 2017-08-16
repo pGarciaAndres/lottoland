@@ -23,11 +23,9 @@
           <p-column field="match" header="Match"></p-column>
           <p-column field="winners" header="Winners"></p-column>
           <p-column field="amount" header="Amount">
-          
             <ng-template let-col let-car="rowData" pTemplate="body">
               <span>{{car[col.field] | currency:'EUR':true }}</span>
             </ng-template>
-
           </p-column>
       </p-dataTable>
     </div>

@@ -28,4 +28,3 @@ var EuroJackpotService = (function () {
     return EuroJackpotService;
 }());
 exports.EuroJackpotService = EuroJackpotService;
-//# sourceMappingURL=eurojackpot.service.js.map

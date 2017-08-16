@@ -13,4 +13,3 @@ testing_1.getTestBed().initTestEnvironment(testing_2.BrowserDynamicTestingModule
 var context = require.context('./', true, /\.spec\.ts$/);
 context.keys().map(context);
 __karma__.start();
-//# sourceMappingURL=test.js.map

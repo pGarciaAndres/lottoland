@@ -82,7 +82,7 @@ var EuroJackpotComponent = (function () {
             resultTable.tier = this.tiers[i];
             resultTable.match = this.matches[i];
             resultTable.winners = odds[this.ranks[i]].winners + "x";
-            resultTable.amount = "€" + odds[this.ranks[i]].prize;
+            resultTable.amount = odds[this.ranks[i]].prize / 100;
             this.resultsTable.push(resultTable);
         }
     };
@@ -100,4 +100,3 @@ var EuroJackpotComponent = (function () {
     return EuroJackpotComponent;
 }());
 exports.EuroJackpotComponent = EuroJackpotComponent;
-//# sourceMappingURL=eurojackpot.component.js.map

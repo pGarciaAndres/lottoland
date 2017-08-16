@@ -27,4 +27,3 @@ describe('EuroJackpotComponent', function () {
         expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
     }));
 });
-//# sourceMappingURL=eurojackpot.component.spec.js.map

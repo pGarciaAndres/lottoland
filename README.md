@@ -26,3 +26,19 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Additional Information
+To test in local, needed to download ALLOW-CONTROL-ALLOW-ORIGIN:* Chrome Plugin to make the far AJAX call `localhost` --> `www.lottoland.com`.
+
+## Grunt
+Install...
+`npm install typescript --save-dev` (on your project).
+`npm install grunt --save-dev` (on your project).
+`npm install grunt-cli -g` (on your system).
+`npm install grunt-ts` (on your system).
+Add the ts task in your `Gruntfile.js`.
+Run `grunt`.
+
+## Deployment
+ng serve --open
+`It create the build folder, where transpile es5 files are created`.

@@ -6,4 +6,3 @@ var ResultTable = (function () {
     return ResultTable;
 }());
 exports.ResultTable = ResultTable;
-//# sourceMappingURL=models.js.map
