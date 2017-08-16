@@ -46,4 +46,3 @@ To make the far AJAX call `localhost` --> `www.lottoland.com`.
 
 ## Deployment
 ng serve --open
-`It create the build folder, where transpile es5 files are created`.
